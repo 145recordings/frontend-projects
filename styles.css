@@ -1,0 +1,44 @@
+.header {
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    background-color: #252525;
+    color: white;
+    height: 250px;
+    border-radius: 50px;
+}
+
+body{
+    font-size: 1.4em;
+    width: 1440px;
+    margin-left: auto;
+    margin-right: auto;
+    color: white;
+    background-color: #606655;
+}
+
+.round-btn{
+    background-color: #606655;
+    border-radius: 15px;
+    padding: 5px;
+    text-decoration: none;
+}
+
+.round-btn:hover{
+    background-color: #252525; 
+}
+
+body a{
+    color: white;
+}
+
+.project-link:hover{
+    color: #252525;
+}
+
+main{
+    width: 400px;
+    margin-left: auto;
+    margin-right: auto;
+}
