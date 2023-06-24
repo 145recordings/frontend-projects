@@ -1,6 +1,4 @@
 var form;
-var main;
-var success;
 
 // check form validity for email and apply custom error message
 function check_email() {
@@ -10,7 +8,7 @@ function check_email() {
     var inputbox = document.getElementById("email");
     
     // if the forms input box does not include an @ or is empty, return false and display error
-    if(!inputbox.checkValidity()) {
+    if (!inputbox.checkValidity()) {
         // assign form to variable
         // change entry box's color if invalid
         // remove default validity error message
@@ -27,18 +25,22 @@ function check_email() {
     else {
         // if form entry is valid
         sessionStorage.setItem("email", form);
-        //document.getElementById("placeholder-email").innerHTML = "<b>" + form + "</b>";
+        
             
         return true;
     }
 }
 
 // set email from session storage in success.html page
-function set_email(){
+function set_email() {
     document.getElementById("placeholder-email").innerHTML = "<b>" + sessionStorage.getItem("email") + "</b>";
 }
 
 // remove session storage email item onclick of dismiss message button in success.html
-function remove_email(){
+function remove_email() {
     sessionStorage.removeItem("email");
+}
+
+function redirect() {
+    window.location.href = "https://145recordings.github.io/frontend-projects/newsletterSignUpWithSuccessMessage/success.html";
 }
