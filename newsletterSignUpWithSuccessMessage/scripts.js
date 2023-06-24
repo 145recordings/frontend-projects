@@ -26,8 +26,9 @@ function check_email() {
         // if form entry is valid
         sessionStorage.setItem("email", form);
         
-            
-        return true;
+        // change to true if using dynamic web server
+        // return false to keep form from being submitted and throw error on github pages
+        return false;
     }
 }
 
