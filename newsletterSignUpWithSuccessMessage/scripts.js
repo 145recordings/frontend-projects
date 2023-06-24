@@ -40,7 +40,3 @@ function set_email() {
 function remove_email() {
     sessionStorage.removeItem("email");
 }
-
-function redirect() {
-    window.location.href = "https://145recordings.github.io/frontend-projects/newsletterSignUpWithSuccessMessage/success.html";
-}
