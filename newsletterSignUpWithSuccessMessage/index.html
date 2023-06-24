@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
+  
+  <title>Frontend Mentor | Newsletter sign-up form with success message</title>
+
+    <link rel="stylesheet" href="styles.css">
+
+</head>
+<body>
+
+  <!-- Sign-up form start -->
+    <main id="main">
+        <div class="mobile-img"><img src="assets/images/illustration-sign-up-mobile.svg"></div>
+        <div class="desktop-left-container">
+            <h1>Stay updated!</h1>
+            <p>Join 60,000+ product managers receiving monthly updates on:</p>
+            <ul>
+                <li>Product discovery and building what matters</li>
+                <li>Measuring to ensure updates are a success</li>
+                <li>And much more!</li>
+            </ul>
+            <form name="email-form" action="success.html" method="post" onsubmit="return check_email()">
+                <label class="form-label" id="email-label" for="email">Email address</label><p id="error-msg">Valid email required</p><br>
+                <input oninvalid="check_email()" class="form-input-box" type="email" id="email" name="email" placeholder="email@company.com" required><br>
+                <input class="form-button" type="submit" name="submit" value="Subscribe to monthly newsletter">
+            </form>
+        </div>
+        <div class="desktop-illustration">
+            <img src="assets/images/illustration-sign-up-desktop.svg">
+        </div>
+        
+    </main>
+
+<!-- Sign-up form end -->    
+
+  
+  <div class="attribution">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+    Coded by <a href="#">Franklin</a>.
+  </div>
+    
+    <script src="scripts.js"></script>
+    
+</body>
+</html>
